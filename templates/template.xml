@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+    <title><![CDATA[{{ .GeneralConfig.Title }}]]></title>
+    <description><![CDATA[{{ .GeneralConfig.Description }}]]></description>
+    <link>{{ .GeneralConfig.Link }}</link>
+    <copyright><![CDATA[{{ .GeneralConfig.Copyright }}]]></copyright>
+    <language><![CDATA[{{ .GeneralConfig.Language }}]]></language>
+    <itunes:explicit>{{ .GeneralConfig.ITunesExplicit }}</itunes:explicit>
+    <itunes:image href="{{ .GeneralConfig.GeneratedValues.ImageURL }}"/>
+    <itunes:category text="{{ .GeneralConfig.ITunesCategory }}">
+        <itunes:category text="{{.GeneralConfig.ITunesSubcategory}}"/>
+    </itunes:category>
+    <itunes:author>{{ .GeneralConfig.ITunesAuthor }}</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner>
+        <itunes:name>{{ .GeneralConfig.ITunesAuthorName }}</itunes:name>
+        <itunes:email>{{ .GeneralConfig.ITunesAuthorEmail }}</itunes:email>
+    </itunes:owner>
+    <generator>finger.rip</generator>
+    {{ range .Episode }}
+    <item>
+        <title><![CDATA[{{ .EpisodeTitle }}]]></title>
+        <description><![CDATA[{{ .EpisodeDescription }}]]></description>
+        <link>{{ .GeneratedValues.EpisodeLink }}</link>
+        <guid isPermaLink="true">{{ .GeneratedValues.EpisodeLink }}</guid>
+        <pubDate>{{ .PubDate }}</pubDate>
+        <enclosure url="{{ .GeneratedValues.EpisodeLink }}" length="{{ .GeneratedValues.EpisodeFileSize }}" type="{{ .GeneratedValues.EpisodeType }}"/>
+        <itunes:duration>{{ .GeneratedValues.EpisodeDuration }}</itunes:duration>
+        <itunes:image href="{{ $.GeneralConfig.GeneratedValues.ImageURL }}"/>
+        <itunes:season>{{ .ITunesSeason }}</itunes:season>
+        <itunes:episode>{{ .ITunesEpisode }}</itunes:episode>
+        <itunes:episodeType>full</itunes:episodeType>
+        <itunes:explicit>{{ $.GeneralConfig.ITunesExplicit }}</itunes:explicit>
+    </item>
+    {{ end }}
+</channel>
+</rss>

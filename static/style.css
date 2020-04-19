@@ -1,0 +1,44 @@
+.big-title {
+    font-size: 60px;
+}
+
+.middle-title {
+    font-size: 30px;
+}
+
+.board {
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+}
+
+@media (max-width: 800px) {
+    .board {
+        width: 90%;
+    }
+}
+
+a {
+    color: grey;
+}
+
+.episode {
+    padding-left: 50px;
+}
+
+.episode-date {
+    padding-right: 10px;
+}
+
+.episode-title {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.episode-description {
+    padding-left: 50px;
+}
+
+.title-image {
+    width: 100%;
+}

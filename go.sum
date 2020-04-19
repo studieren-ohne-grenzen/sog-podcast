@@ -1,0 +1,5 @@
+github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
+github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/dhowden/tag v0.0.0-20190519100835-db0c67e351b1/go.mod h1:SniNVYuaD1jmdEEvi+7ywb1QFR7agjeTdGKyFb0p7Rw=
+github.com/goulash/audio v0.0.0-20160617125121-c5582a0542cc/go.mod h1:yWieEqVRi5v7wwU/AA17VMkYZzoFN2yFmCLk391A+cc=
+github.com/goulash/stat v0.0.0-20160808140053-152dab06d086/go.mod h1:zy77erGB6/tHcY1K/lsZ0rbJ7ziHy55tw9RCvi18o60=

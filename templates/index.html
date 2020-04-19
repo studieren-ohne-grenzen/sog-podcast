@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SOG-Podcast</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="board">
+        Abonniert unseren <a href="/rss">RSS Feed</a>
+        <br>
+        <span class="middle-title">Alle unsere Folgen</span>
+        <hr>
+        {{ range . }}
+        <div class="episode">
+            <span class="episode-date">{{ .GeneratedValues.PubDateReadable }}<span>
+            <span class="episode-title">{{ .EpisodeTitle }}</span>
+            <div class="episode-description">
+                <p>{{ .GeneratedValues.DescriptionTrusted }}</p>
+                <audio controls="controls">
+                    <source src="{{ .GeneratedValues.EpisodeLink }}">
+                </audio>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>
