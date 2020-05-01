@@ -9,12 +9,17 @@
 .board {
     padding: 10px;
     margin: auto;
-    width: 90%;
 }
 
 @media (max-width: 800px) {
     .board {
         width: 90%;
+    }
+}
+
+@media (min-width: 800px) {
+    .board {
+        width: 50%;
     }
 }
 
