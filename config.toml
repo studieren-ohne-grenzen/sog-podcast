@@ -1,9 +1,9 @@
 [GeneralConfig]
-URL = "https://podcast-aachen.others-production.esf-international.org/" # This is the URL that the download links relate to.
+URL = "podcast-aachen.others-production.esf-international.org/" # This is the URL that the download links relate to (without method).
 Method = "https" # http or https
 Title = "Aachener Podcast (Test)"
 Description = "Hier entsteht der Aachener Podcast"
-Link = "https://podcast-aachen.others-production.esf-international.org/" # This is the URL that you get to when you click on.
+Link = "podcast-aachen.others-production.esf-international.org/" # This is the URL that you get to when you click on (also without method).
 ImageTitle = "SOG Podcast"
 Copyright = "Studieren Ohne Grenzen Aachen"
 Language = "de-de"
