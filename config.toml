@@ -1,20 +1,20 @@
 [GeneralConfig]
-URL = "localhost:8080" # This is the URL that the download links relate to.
-Method = "http" # http or https
-Title = "TestPodcast"
-Description = "Nix"
-Link = "Nirgendwo" # This is the URL that you get to when you click on.
+URL = "https://podcast-aachen.others-production.esf-international.org/" # This is the URL that the download links relate to.
+Method = "https" # http or https
+Title = "Aachener Podcast (Test)"
+Description = "Hier entsteht der Aachener Podcast"
+Link = "https://podcast-aachen.others-production.esf-international.org/" # This is the URL that you get to when you click on.
 ImageTitle = "SOG Podcast"
-Copyright = "Niemand"
+Copyright = "Studieren Ohne Grenzen Aachen"
 Language = "de-de"
-ITunesAuthor = ""
+ITunesAuthor = "Studieren Ohne Grenzen Aachen"
 ITunesType = "episodic"
 ITunesAuthorName = ""
 ITunesAuthorEmail = ""
 ITunesExplicit = "no" # One of yes or no
 # Make sure this category actually exists: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-ITunesCategory = "Society &amp; Culture"
-ITunesSubcategory = "Philosophy"
+ITunesCategory = "Music"
+ITunesSubcategory = "Music Interviews"
 
 [[Episode]]
 EpisodeTitle = "Eine Test-Folge"
