@@ -17,7 +17,7 @@
         <itunes:name>{{ .GeneralConfig.ITunesAuthorName }}</itunes:name>
         <itunes:email>{{ .GeneralConfig.ITunesAuthorEmail }}</itunes:email>
     </itunes:owner>
-    <generator>finger.rip</generator>
+    <generator>sog-generator</generator>
     {{ range .Episode }}
     <item>
         <title><![CDATA[{{ .EpisodeTitle }}]]></title>
