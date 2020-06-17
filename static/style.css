@@ -11,13 +11,13 @@
     margin: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     .board {
         width: 90%;
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1300px) {
     .board {
         width: 50%;
     }
@@ -45,5 +45,6 @@ a {
 }
 
 .title-image {
-    width: 100%;
+    width: 50%;
+    align-self: center;
 }

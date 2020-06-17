@@ -1,10 +1,10 @@
 [GeneralConfig]
-URL = "podcast-aachen.others-production.esf-international.org/" # This is the URL that the download links relate to (without method).
+URL = "profcast.studieren-ohne-grenzen.org/" # This is the URL that the download links relate to (without method).
 Method = "https" # http or https
-Title = "Aachener Podcast (Test)"
-Description = "Hier entsteht der Aachener Podcast"
-Link = "podcast-aachen.others-production.esf-international.org/" # This is the URL that you get to when you click on (also without method).
-ImageTitle = "SOG Podcast"
+Title = "SOG Profcast"
+Description = "Profs reden über Musik und mehr"
+Link = "profcast.studieren-ohne-grenzen.org/" # This is the URL that you get to when you click on (also without method).
+ImageTitle = "SOG Profcast"
 Copyright = "Studieren Ohne Grenzen Aachen"
 Language = "de-de"
 ITunesAuthor = "Studieren Ohne Grenzen Aachen"
@@ -15,6 +15,8 @@ ITunesExplicit = "no" # One of yes or no
 # Make sure this category actually exists: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
 ITunesCategory = "Music"
 ITunesSubcategory = "Music Interviews"
+
+# Below is the list of episodes.
 
 [[Episode]]
 EpisodeTitle = "Eine Test-Folge"

@@ -96,10 +96,11 @@ func GenerateFeed(conf ConfigType) error {
 	var generalConfig = conf.GeneralConfig
 	var episodes = conf.Episode
 
-	// Set automatic parameters
-	generalConfig.GeneratedValues.ImageURL = "https://" + path.Join(generalConfig.URL, "download", "image.png")
+	generalConfig.GeneratedValues.ImageURL = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "image.jpg")
 
+	// Set automatic parameters
 	for i, e := range episodes {
+		e.GeneratedValues.ImageURL = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "image.jpg")
 		e.GeneratedValues.EpisodeLink = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "audio", e.Audio)
 
 		audioFile := path.Join("static/download/audio/", e.Audio)
