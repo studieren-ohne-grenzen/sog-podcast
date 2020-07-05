@@ -19,7 +19,7 @@
             <span class="episode-date">{{ .GeneratedValues.PubDateReadable }}<span>
             <span class="episode-title">{{ .EpisodeTitle }}</span>
             <div class="episode-description">
-                <p>{{ .GeneratedValues.DescriptionTrusted }}</p>
+                <div>{{ .GeneratedValues.DescriptionTrusted }}</div>
                 <audio controls="controls">
                     <source src="{{ .GeneratedValues.EpisodeLink }}">
                 </audio>
