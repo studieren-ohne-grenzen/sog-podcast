@@ -33,7 +33,6 @@ type EpisodeConfigType struct {
 	ITunesSeason       string
 	ITunesEpisode      string
 	GeneratedValues    struct {
-		ImageURL        string
 		EpisodeLink     string
 		EpisodeFileSize string
 		EpisodeType     string
@@ -93,14 +92,13 @@ func loadConfigFromFile() (ConfigType, error) {
 
 // GenerateFeed generates the podcast feed rss
 func GenerateFeed(conf ConfigType) error {
-	var generalConfig = conf.GeneralConfig
+	var generalConfig = &conf.GeneralConfig
 	var episodes = conf.Episode
 
 	generalConfig.GeneratedValues.ImageURL = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "image.jpg")
 
 	// Set automatic parameters
 	for i, e := range episodes {
-		e.GeneratedValues.ImageURL = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "image.jpg")
 		e.GeneratedValues.EpisodeLink = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "audio", e.Audio)
 
 		audioFile := path.Join("static/download/audio/", e.Audio)
