@@ -9,8 +9,8 @@ Copyright = "Studieren Ohne Grenzen Aachen"
 Language = "de-de"
 ITunesAuthor = "Studieren Ohne Grenzen Aachen"
 ITunesType = "episodic"
-ITunesAuthorName = ""
-ITunesAuthorEmail = ""
+ITunesAuthorName = "Studieren Ohne Grenzen Aachen"
+ITunesAuthorEmail = "aachen@studieren-ohne-grenzen.org"
 ITunesExplicit = "no" # One of yes or no
 # Make sure this category actually exists: https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
 ITunesCategory = "Music"
