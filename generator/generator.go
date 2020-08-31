@@ -95,7 +95,7 @@ func GenerateFeed(conf ConfigType) error {
 	var generalConfig = &conf.GeneralConfig
 	var episodes = conf.Episode
 
-	generalConfig.GeneratedValues.ImageURL = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "image.jpg")
+	generalConfig.GeneratedValues.ImageURL = generalConfig.Method + "://" + path.Join(generalConfig.URL, "download", "image.png")
 
 	// Set automatic parameters
 	for i, e := range episodes {

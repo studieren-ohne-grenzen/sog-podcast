@@ -18,14 +18,22 @@ ITunesSubcategory = "Music Interviews"
 
 # Below is the list of episodes.
 
-# [[Episode]]
-# EpisodeTitle = "Eine Test-Folge"
-# EpisodeDescription = """
-# Das ist ein Test einer Multi-Line Description.
-# <br>
-# Klappt das so, wie es hier ist?
-# """
-# Audio = "001.mp3" # In static/download/audio
-# PubDate = "19 Apr 2020"
-# ITunesSeason = "1"
-# ITunesEpisode = "1"
+[[Episode]]
+EpisodeTitle = "Folge 1: Prof. Dr. Klaus Reicherter"
+EpisodeDescription = """
+Prof. Dr. Reicherter ist Professor für Neotektonik und Georisiken an der RWTH Aachen.
+<br>
+Playlist auf Spotify: <a href="https://open.spotify.com/playlist/4IkjyJp7baejVJmbAzQUDr">https://open.spotify.com/playlist/4IkjyJp7baejVJmbAzQUDr</a>
+<ul>
+<li>Stairway to Heaven von Led Zeppelin</li>
+<li>Lazarus von Porcupine Tree</li>
+<li>Miss Murder von AFI</li>
+<li>November Rain von Guns N' Roses</li>
+<li>Bohemian Rhapsody von Queen</li>
+<li>Highway to Hell von AC/DC</li>
+</ul>
+"""
+Audio = "001.mp3" # In static/download/audio
+PubDate = "31 Aug 2020"
+ITunesSeason = "1"
+ITunesEpisode = "1"
