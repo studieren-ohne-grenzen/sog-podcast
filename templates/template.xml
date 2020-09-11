@@ -24,7 +24,7 @@
         <description><![CDATA[{{ .EpisodeDescription }}]]></description>
         <link>{{ .GeneratedValues.EpisodeLink }}</link>
         <guid isPermaLink="true">{{ .GeneratedValues.EpisodeLink }}</guid>
-        <pubDate>{{ .PubDate }}</pubDate>
+        <pubDate>{{ .GeneratedValues.PubDateDetailed }}</pubDate>
         <enclosure url="{{ .GeneratedValues.EpisodeLink }}" length="{{ .GeneratedValues.EpisodeFileSize }}" type="{{ .GeneratedValues.EpisodeType }}"/>
         <itunes:duration>{{ .GeneratedValues.EpisodeDuration }}</itunes:duration>
         <itunes:image href="{{ $.GeneralConfig.GeneratedValues.ImageURL }}"/>

@@ -16,7 +16,7 @@
         <hr>
         {{ range . }}
         <div class="episode">
-            <span class="episode-date">{{ .GeneratedValues.PubDateReadable }}<span>
+            <span class="episode-date">{{ .PubDate }}<span>
             <span class="episode-title">{{ .EpisodeTitle }}</span>
             <div class="episode-description">
                 <div>{{ .GeneratedValues.DescriptionTrusted }}</div>

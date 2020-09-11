@@ -39,7 +39,7 @@ type EpisodeConfigType struct {
 		EpisodeDuration string
 
 		DescriptionTrusted htmltemplate.HTML
-		PubDateReadable    string
+		PubDateDetailed    string
 	} `toml:"_"`
 }
 
@@ -146,7 +146,7 @@ func GenerateFeed(conf ConfigType) error {
 		if err != nil {
 			return err
 		}
-		e.GeneratedValues.PubDateReadable = pubDateTime.Format("2. Jan 2006")
+		e.GeneratedValues.PubDateDetailed = pubDateTime.Format(time.RFC1123)
 		e.GeneratedValues.DescriptionTrusted = htmltemplate.HTML(e.EpisodeDescription)
 
 		episodes[i] = e
