@@ -19,6 +19,28 @@ ITunesSubcategory = "Music Interviews"
 # Below is the list of episodes.
 
 [[Episode]]
+EpisodeTitle = "Folge 2: Prof. Dr. Joost-Pieter Katoen"
+EpisodeDescription = """
+Prof. Dr. Katoen ist Professor für Informatik an der RWTH Aachen.
+<br>
+Playlist auf Spotify: <a href="https://open.spotify.com/playlist/2ipElyqG6bXUmynLau0v0m">https://open.spotify.com/playlist/2ipElyqG6bXUmynLau0v0m</a>
+<ul>
+<li>Fake Plastic Trees von Radiohead</li>
+<li>Renee von Talk Talk</li>
+<li>Remember Russia von Fischer-Z</li>
+<li>Doreen - Live Dortmund 1978 von Herman Brood & His Wild Romance</li>
+<li>Venice Queen von Red Hod Chili Peppers</li>
+<li>Decades von Joy Division</li>
+<li>DEUTSCHLAND von Rammstein</li>
+<li>Damage von David Sylvian und Robert Fripp</li>
+</ul>
+"""
+Audio = "002.mp3" # In static/download/audio
+PubDate = "23 Oct 2020"
+ITunesSeason = "1"
+ITunesEpisode = "2"
+
+[[Episode]]
 EpisodeTitle = "Folge 1: Prof. Dr. Klaus Reicherter"
 EpisodeDescription = """
 Prof. Dr. Reicherter ist Professor für Neotektonik und Georisiken an der RWTH Aachen.
